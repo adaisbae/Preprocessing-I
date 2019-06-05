@@ -135,3 +135,12 @@ body {
   height: 100%;
   font-size: 62.5%;
 }
+.container {
+  max-width: 90%;
+  border: 1px dashed red;
+  margin: auto;
+}
+header nav a {
+  color: #610345;
+  font-size: 4em;
+}

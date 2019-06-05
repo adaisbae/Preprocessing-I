@@ -58,6 +58,33 @@ html, body {
 	font-size: 62.5%;
 }
 
-// Variables start here //
+// Variables Start Here //
+@text-color: #610345;
+@standard-font-size: 4em;
+
+// Mixins Start Here //
+.center-margin(){
+	margin: auto;
+}
+
+
+
+
+// Style Starts Here //
+.container {
+	max-width: 90%;
+	border: 1px dashed red;
+	.center-margin()
+}
+
+header {
+nav {
+	a {
+		color: @text-color;
+		font-size: @standard-font-size;
+	}
+}
+}
+
 
 
