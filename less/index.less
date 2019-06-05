@@ -63,35 +63,48 @@ html, body {
 @background-color: black;
 @standard-font-size: 2.8rem;
 
-
 // Mixins Start Here //
 .even-spacing() {
 	display: flex;
 	justify-content: space-between;
 }
 
-.fxed-position() {
-	position: fixed;
-}
-
-
 // Style Starts Here //
-header {
-	border: 1px solid black;
-	width: 100%;
-	background: @background-color;
-	.fixed-position();
+body {
+	font-size: 1.6rem;
 
-	nav {
-		width: 100em;
-		.even-spacing();
-	}
-
-		a {
-			color: @text-color;
-			font-size: @standard-font-size;
+	header {
+		width: 100%;
+		//background: @background-color; //
+	
+		nav {
+			width: 80%;
+			.even-spacing();
+			
 		}
+	
+			a {
+				color: @text-color;
+				font-size: @standard-font-size;
+				outline: 2px solid red;
+			}
+	}
+	p {
+
+		font-size: 40px;
+	}
 }
+
+section {
+	background: silver;
+}
+
+
+
+
+
+
+
 
 
 
