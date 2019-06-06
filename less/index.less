@@ -54,6 +54,63 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
+
+// Variables Start Here //
+@text-color: #98C1D9;
+@background-color: black;
+@standard-font-size: 2.8rem;
+
+// Mixins Start Here //
+.even-spacing() {
+	display: flex;
+	justify-content: space-between;
+}
+
+// Style Starts Here //
+body {
+	font-size: 1.6rem;
+
+	header {
+		width: 100%;
+		//background: @background-color; //
+	
+		nav {
+			width: 80%;
+			.even-spacing();
+			
+		}
+	
+			a {
+				color: @text-color;
+				font-size: @standard-font-size;
+				outline: 2px solid red;
+			}
+	}
+	p {
+
+		font-size: 40px;
+	}
+}
+
+section {
+	background: silver;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
