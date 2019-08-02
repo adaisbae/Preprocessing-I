@@ -59,7 +59,7 @@ html, body {
 }
 
 .container{
-	max-width: 75%;
+	max-width: 65%;
 	margin: auto;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -84,5 +84,44 @@ html, body {
 	}
 }
 
+.top-content{
+	background-color: lightgray;
+	padding: 20px;
+	
+	.top-image{
+		width: 50%;
+
+		img{
+			width: 45%;
+		}
+	}
+
+	.top-text{
+		display: flex;
+		flex-direction: column;
+		align-content: space-around;
+
+		h1{
+			font-size: 6rem;
+		}
+
+		h3{
+			font-size: 3rem;
+		}
+
+		p{
+			font-size: 1.8rem;
+		}
+
+		button{
+			text-align: center;
+			padding: 20px;
+			background-color: plum;
+			color: white;
+			font-size: 1.8rem;
+			border-radius: 10px;
+		}
+	}
+}
 
 

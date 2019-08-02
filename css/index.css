@@ -136,7 +136,7 @@ body {
   font-size: 62.5%;
 }
 .container {
-  max-width: 75%;
+  max-width: 65%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -156,4 +156,36 @@ body {
   text-decoration: none;
   color: black;
   font-size: 1.8rem;
+}
+.top-content {
+  background-color: lightgray;
+  padding: 20px;
+}
+.top-content .top-image {
+  width: 50%;
+}
+.top-content .top-image img {
+  width: 45%;
+}
+.top-content .top-text {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+.top-content .top-text h1 {
+  font-size: 6rem;
+}
+.top-content .top-text h3 {
+  font-size: 3rem;
+}
+.top-content .top-text p {
+  font-size: 1.8rem;
+}
+.top-content .top-text button {
+  text-align: center;
+  padding: 20px;
+  background-color: plum;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 10px;
 }
