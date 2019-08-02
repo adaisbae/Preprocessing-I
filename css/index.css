@@ -133,9 +133,27 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
 }
 .container {
+  max-width: 75%;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
+}
+.container header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+}
+.container header nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.container header nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
 }
