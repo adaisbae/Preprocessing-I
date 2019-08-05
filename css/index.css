@@ -163,6 +163,7 @@ body {
 }
 .top-content .top-image {
   width: 100%;
+  margin-bottom: 40px;
 }
 .top-content .top-image img {
   width: 100%;
@@ -174,12 +175,15 @@ body {
 }
 .top-content .top-text h1 {
   font-size: 4rem;
+  margin-bottom: 5px;
 }
 .top-content .top-text h3 {
   font-size: 3rem;
+  margin-bottom: 15px;
 }
 .top-content .top-text p {
   font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 .top-content .top-text button {
   align-self: flex-start;
@@ -187,7 +191,7 @@ body {
   padding: 20px;
   background-color: plum;
   color: white;
-  font-size: 1.8rem;
+  font-size: 2rem;
   border-radius: 10px;
   width: 25%;
 }
