@@ -63,10 +63,16 @@ html, body {
 
 
 .container{
-	max-width: 65%;
+	width: 65%;
     margin: auto;
-    .layout();
-	
+    display: grid;
+	grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    
+    @media(max-width: 500px){
+        width: 100%;
+    }
+
 	header{
 		display: flex;
 		justify-content: flex-end;
@@ -75,7 +81,11 @@ html, body {
 		nav{
 			width: 50%;
 			display: flex;
-			justify-content: space-around;
+            justify-content: space-around;
+            
+            @media(max-width: 500px){
+                width: 100%;
+            }
 	
 			a{
 				text-decoration: none;
@@ -122,16 +132,20 @@ html, body {
                 align-self: flex-start;
                 text-align: center;
                 padding: 20px;
-                background-color: @button;
-                color: @text;
+                background-color: plum;
+                color: white;
                 font-size: 2rem;
                 border-radius: 10px;
                 width: 25%;
+
+                @media(max-width: 500px){
+                    width: 50%;
+                }
             }
 
             button:hover{
-                background-color: @text;
-                color: @button;
+                background-color: white;
+                color: plum;
                 }
 
         }
@@ -180,7 +194,10 @@ html, body {
           }
     
           td, th{
-            .table();
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            font-size: 2rem;
           }
     
           tr:nth-child(even) {
@@ -195,8 +212,8 @@ html, body {
         background-color: lightgray;
         padding: 30px;
     }
-}
 
+}
 
 
 

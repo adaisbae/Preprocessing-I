@@ -136,11 +136,16 @@ body {
   font-size: 62.5%;
 }
 .container {
-  max-width: 65%;
+  width: 65%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
 }
 .container header {
   display: flex;
@@ -151,6 +156,11 @@ body {
   width: 50%;
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    width: 100%;
+  }
 }
 .container header nav a {
   text-decoration: none;
@@ -195,6 +205,11 @@ body {
   border-radius: 10px;
   width: 25%;
 }
+@media (max-width: 500px) {
+  .container .top-content .top-text button {
+    width: 50%;
+  }
+}
 .container .top-content .top-text button:hover {
   background-color: white;
   color: plum;
@@ -222,7 +237,6 @@ body {
   font-size: 2rem;
 }
 .container .bottom-content .work {
-  width: 100%;
   padding: 15px;
 }
 .container .bottom-content .work h1 {
